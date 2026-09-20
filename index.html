@@ -3,67 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loyz Bot Feature Preview</title>
+    <title>Bot Preview</title>
     
-    <!-- Meta tag Open Graph supaya pas link dikirim di WhatsApp muncul preview gambar -->
-    <meta property="og:title" content="Loyz WhatsApp Bot Features" />
-    <meta property="og:description" content="Kirim foto dengan caption !sticker untuk mengubah gambar menjadi stiker otomatis!" />
+    <!-- Meta tag Open Graph untuk preview kartu saat link dikirim di WhatsApp -->
+    <meta property="og:title" content="Loyz WhatsApp Bot" />
+    <meta property="og:description" content="Preview Bot WhatsApp" />
     <meta property="og:image" content="https://0xloyz.github.io/bot/preview.png" />
     <meta property="og:url" content="https://0xloyz.github.io/bot/" />
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #0f172a;
-            color: #f8fafc;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
+            padding: 16px;
         }
-        .container {
-            background-color: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 16px;
-            padding: 24px;
-            max-width: 420px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-        }
-        h1 { color: #38bdf8; font-size: 1.5rem; margin-bottom: 8px; }
-        p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px; }
-        .feature-list {
-            text-align: left;
-            background: #020617;
-            padding: 12px 16px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .code { color: #38bdf8; font-family: monospace; font-weight: bold; }
-        .preview-img {
-            width: 100%;
-            border-radius: 8px;
-            border: 1px solid #334155;
-            margin-top: 10px;
+        img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            object-fit: contain;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🤖 Loyz Bot WhatsApp</h1>
-        <p>Gunakan perintah di bawah ini untuk berinteraksi dengan bot:</p>
-        
-        <div class="feature-list">
-            <div>• <span class="code">!bot-start</span> : Mengaktifkan bot & menampilkan menu</div>
-            <div>• <span class="code">!sticker</span> : Kirim foto + caption ini untuk buat stiker</div>
-            <div>• <span class="code">!bot-stop</span> : Mematikan bot sementara</div>
-        </div>
 
-        <!-- Taruh file preview.png kamu di repo yang sama -->
-        <img class="preview-img" src="preview.png" alt="Bot Preview" onerror="this.src='https://via.placeholder.com/400x250/0f172a/38bdf8?text=Loyz+Bot+WhatsApp'">
-    </div>
+    <!-- Menampilkan hanya gambar preview.png -->
+    <img src="preview.png" alt="Preview Bot" onerror="this.src='https://via.placeholder.com/600x400/0f172a/38bdf8?text=preview.png+tidak+ditemukan'">
+
 </body>
 </html>
